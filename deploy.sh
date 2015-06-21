@@ -14,7 +14,7 @@ fi
 
 export BASE_URL="https://$WEBSITE_HOSTNAME"
 if [ "$WEBSITE_HOSTNAME" == "runc.azurewebsites.net" ]; then
-  export BASE_URL="https://www.runc.io"
+  export BASE_URL="https://runc.azurewebsites.net"
 fi
 
 # Create and store unique artifact name
