@@ -44,9 +44,9 @@ p {
 
 a.headTitle {
   color:#8e9cff;
-  font-family: Roboto; 
-  font-size: 18px; 
-  padding-left:16px; 
+  font-family: Roboto;
+  font-size: 18px;
+  padding-left:16px;
   letter-spacing: .1rem;
   text-transform: uppercase;
 }
@@ -88,6 +88,7 @@ h4 {font-size:18px; line-height:1.4rem;}
 .terminal-window {
   text-align: left;
   max-width: 550px;
+  min-width: 260px;
   border-radius: 10px;
   position: relative;
   margin-bottom: 2rem;

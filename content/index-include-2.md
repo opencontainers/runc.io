@@ -4,20 +4,22 @@ title = "Index"
 include = "index-2"
 +++
 
-runC characteristics:
- - **Embeddable**: Containers are started as a child process of runC and there is no daemon that needs managing.
- - **Battle hardened**: runC is built on libcontainer, the same container technology powering millions of Docker Engine installations.
- - **Compatible with Docker**: Docker images can be ran with runC.
+runC characteristics:  
+* **Embeddable**: Containers are started as a child process of runC and there is no daemon that needs managing.
+* **Battle hardened**: runC is built on libcontainer, the same container technology powering millions of Docker Engine installations.
+* **Compatible with Docker**: Docker images can be ran with runC.
 
 ### Getting started
 
 You can run Docker images pulled with Docker: first you need to run a container for that image, then export it's file system. You can create a manifest file for runC to run it, or let runC generate one for you.
+
 ```
 $ docker export myapp > myapp.tar
 $ runc run ./myapp.tar /usr/bin/nginx
 ```
 
 Or even just a directory with a filesystem in it:
+
 ```
 $ ls myapp
 bin      etc      lib      linuxrc  mnt      proc     run      sys      usr
