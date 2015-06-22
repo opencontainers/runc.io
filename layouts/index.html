@@ -29,8 +29,8 @@
     </div>
 
 <div class="Center-Container">
-  <div class="rowVertical" style="height:164px;">
-        <div class="terminal-window">
+  <div class="rowVertical" style="height:240px;">
+        <div class="terminal-window" style="width:500px;">
           <header>
             <div class="btn green"></div>
             <div class="btn yellow"></div>
@@ -50,20 +50,20 @@
         </div>
       </div>
     </div>
-<div class="container" id="indexcontent">
-  	<div class="row" style="background-color:#ffffff; padding-left:36px;padding-top:24px;padding-right:36px;">
-			<div id="indexcol1">
+<div class="Center-Container">
+      <div class="rowVertical" style="width:1000px; background:#ffffff">
+        <div class="textColumn cellLeft">
         {{ range first 1 (where .Data.Pages  "Params.include" "index-1") }}
           {{ .Content }}
         {{ end }}
-  			</div>
-			<div id="indexcol2">
+  		</div>
+        <div class="textColumn cellLeft">
       {{ range first 1 (where .Data.Pages  "Params.include" "index-2") }}
         {{ .Content }}
       {{ end }}
-			</div>
- 	</div>
- </div>
+		</div>
+      </div>
+    </div>
 </div>
 
 
