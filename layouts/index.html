@@ -1,42 +1,16 @@
 
  {{ partial "header_index.html" . }}
- <div id="logogridsection" class="section no-pad-bot" style="text-align:center; position:relative; left:0%; padding-left:55px; background-color:#ffffff;">
+ <div id="logogridsection" class="section no-pad-bot" style="text-align:center; position:relative; left:0%; padding-bottom:12px;background-color:#ffffff;">
       
-	      <div class="logogrid"><img src="{{.Site.BaseURL}}/images/logos/AmazonWebservices_Logo.svg" height="32px"></div>
-	      <div class="logogrid"><img src="{{.Site.BaseURL}}/images/logos/Apcera-logo-dark.png" height="32px"></div>
-	      <div class="logogrid"><img src="{{.Site.BaseURL}}/images/logos/Cisco_logo.svg" height="32px"></div>
-	      <div class="logogrid"><img src="{{.Site.BaseURL}}/images/logos/coreos_logo.svg" height="32px"></div>
-	      <div class="logogrid"><img src="{{.Site.BaseURL}}/images/logos/docker_logo.svg" height="32px"></div>
-	      <div class="logogrid"><img src="{{.Site.BaseURL}}/images/logos/EMC_Corporation_logo.svg" height="24px"></div>
-	      <div class="logogrid"><img src="{{.Site.BaseURL}}/images/logos/Fujitsu-Logo.svg" height="32px"></div>
-	      <div class="logogrid"><img src="{{.Site.BaseURL}}/images/logos/Goldman_Sachs.svg" height="32px"></div>
-	      <div class="logogrid"><img src="{{.Site.BaseURL}}/images/logos/HP_New_Logo_2D.svg" height="32px"></div>
-	      <div class="logogrid"><img src="{{.Site.BaseURL}}/images/logos/Huawei.svg" height="32px"></div>
-	      <div class="logogrid"><img src="{{.Site.BaseURL}}/images/logos/IBM_logo.svg" height="24px"></div>
-	      <div class="logogrid"><img src="{{.Site.BaseURL}}/images/logos/Intel-logo.svg" height="32px"></div>
-	      <div class="logogrid"><img src="{{.Site.BaseURL}}/images/logos/Joyent-logo.png" height="24px"></div>
-	      <div class="logogrid"><img src="{{.Site.BaseURL}}/images/logos/Linux_Foundation_logo.png" height="28px"></div>
-	      <div class="logogrid"><img src="{{.Site.BaseURL}}/images/logos/Logo_Google_2013_Official.svg" height="32px"></div>
-	      <div class="logogrid"><img src="{{.Site.BaseURL}}/images/logos/mesosphere_logo.png" height="18px"></div>
-	      <div class="logogrid"><img src="{{.Site.BaseURL}}/images/logos/Microsoft_logo_(2012).svg" height="24px"></div>
-	      <div class="logogrid"><img src="{{.Site.BaseURL}}/images/logos/pivotal.svg" height="32px"></div>
-	      <div class="logogrid"><img src="{{.Site.BaseURL}}/images/logos/rancher_logo.png" height="32px"></div>
-	      <div class="logogrid"><img src="{{.Site.BaseURL}}/images/logos/red-hat-logotype.svg" height="28px"></div>
-	      <div class="logogrid"><img src="{{.Site.BaseURL}}/images/logos/Vmware.svg" height="18px"></div>
+	      <div style="border: 14px solid #f0f93d; width:42px; height:42px; display:inline-flex;"></div><div style="color:#8e9cff; display:inline-flex;font-family: Roboto; font-size: 18px; padding-left:16px; letter-spacing: .1rem;"> <a href="a">OPEN CONTAINER PROJECT</a></div>
     	
  </div>
 
 
     <div class="section no-pad-bot" style="margin-top:80px;">
-      <div class="container" style="height:225px; text-align:center;">
-        <div style="color:#000000; width:100%; padding-bottom:12px;"><b>Announcing</b> a new project,  supported by businesses around the world to bring standardization to software Containers.</div>
-        <div style="border: 20px solid #f0f93d; width:64px; height:64px; display:inline-flex;"></div><div style="color:#ffffff; display:inline-flex;font-family: Roboto; font-size: 36px; padding-left:16px; letter-spacing: .2rem;">OPEN CONTAINER PROJECT</div>
-
-        <div style="padding-right:48px; padding-top:64px;">
-         <a style="color:#ffffff;padding-right:24px;" href="{{.Site.BaseURL}}/about">About</a>
-         <a style="color:#ffffff;padding-right:24px;" href="{{.Site.BaseURL}}/faq">FAQ</a>
-         <a style="color:#ffffff;padding-right:24px;" href="{{.Site.BaseURL}}/charter">Charter</a>
-      </div>
+      <div class="container" style="height:125px; text-align:center;">
+        <div style="color:#000000; width:100%; padding-bottom:12px;"><b>Announcing</b> a new tool, by the OPEN CONTAINER PROJECT.</div>
+        <div style=""></div><div style="color:#ffffff; display:inline-flex;font-family: Roboto; font-size: 36px; padding-left:16px; letter-spacing: .2rem;">runC</div>
       </div>
 
     </div>
@@ -47,7 +21,27 @@
       <img src="{{.Site.BaseURL}}/images/default.png">
     {{end}}
     </div>
-
+  
+<div class="container">
+        <div class="terminal-window">
+          <header>
+            <div class="btn green"></div>
+            <div class="btn yellow"></div>
+            <div class="btn red"></div>
+          </header>
+          <section class="terminal">
+            <div class="terminal-data">
+              $ runc <br>&nbsp;&nbsp;<span class="green">Pulling</span> <span class="gray">image redis...</span><br>
+              &nbsp;&nbsp;<span class="green">Building</span> <span class="gray">web...</span><br>
+              &nbsp;&nbsp;<span class="green">Starting</span> <span class="gray">composetest_redis_1...</span><br>
+              &nbsp;&nbsp;<span class="green">Starting</span> <span class="gray">composetest_web_1...</span><br>
+              &nbsp;&nbsp;<span class="gray">redis_1 | [8] 02 Jan 18:43:35.576 # Server started,<br>
+              &nbsp; Redis version 2.8.3</span><br>&nbsp;&nbsp;web_1 | * Running on http://0.0.0.0:5000/<br>
+              $<span class="prompt"></span><span class="typed-cursor">|</span>
+            </div>
+        </section>
+        </div>
+      </div>
 <div class="container" id="indexcontent">
   	<div class="row" style="background-color:#ffffff; padding-left:36px;padding-top:24px;">
 			<div id="indexcol1">
