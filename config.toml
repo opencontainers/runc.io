@@ -1,6 +1,6 @@
 baseurl = "https://www.runc.io"
 languageCode = "en-us"
-title = "Runc Project"
+title = "runC Project"
 author = "Patrick Chanezon"
 copyright = "Copyright (c) 2015, Linux Foundation;"
 canonifyurls = true
