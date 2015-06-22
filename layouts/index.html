@@ -1,19 +1,25 @@
 
  {{ partial "header_index.html" . }}
- <div id="logogridsection" class="section no-pad-bot" style="text-align:center; position:relative; left:0%; padding-bottom:12px;background-color:#ffffff;">
 
-	      <div style="border: 14px solid #f0f93d; width:42px; height:42px; display:inline-flex;"></div><div style="color:#8e9cff; display:inline-flex;font-family: Roboto; font-size: 18px; padding-left:16px; letter-spacing: .1rem;"> <a href="{{.Site.BaseURL}}">{{.Site.Title}}</a></div>
-
+ <div class="Center-Container" style="min-height:80px; background-color:#ffffff">
+  <div class="rowVertical">
+	      <div class="rowVertical cellLeft" style="width:64px;"><img src="{{.Site.BaseURL}}/images/ocp_icon-02.svg" height="64px"></div>
+        <div class="rowVertical cellLeft" style="width:300px;"><a class="headTitle" href="{{.Site.BaseURL}}">{{.Site.Title}}</a></div>
+  </div>
  </div>
 
+<div class="Center-Container">
+    <div class="rowVertical" style="color:#000000; text-align:center; padding:36px 36px 0px 36px"><p>Announcing a lightweight universal runtime container, by the OPEN CONTAINER PROJECT.</p></div>
+  </div>
 
-    <div class="section no-pad-bot" style="margin-top:80px;">
-      <div class="container" style="height:125px; text-align:center;">
-        <div style="color:#000000; width:100%; padding-bottom:12px;"><b>Announcing</b> a lightweight universal runtime container, by the OPEN CONTAINER PROJECT.</div>
-        <div style="display:inline-flex;"><img src="{{.Site.BaseURL}}/images/run_icon.svg" height="42"></div><div style="color:#ffffff; display:inline-flex;font-family: Roboto; font-size: 36px; padding-left:16px; letter-spacing: .2rem;">runC</div>
+     <div class="Center-Container">
+      <div class="rowVertical" style="height:164px;">
+        
+        <div class="rowVertical cellLeft"><img src="{{.Site.BaseURL}}/images/run_icon-01.svg" height="64"></div>
+        <div class="rowVertical cellLeft" style="color:#ffffff; font-family: Roboto; font-size: 48px; letter-spacing: .2rem;">runC</div>
       </div>
-
     </div>
+
     <div class="parallax">
     {{if .Site.Params.headerCover}}
       <img src="{{.Site.BaseURL}}/{{.Site.Params.headerCover}}">
@@ -22,7 +28,8 @@
     {{end}}
     </div>
 
-<div class="container">
+<div class="Center-Container">
+  <div class="rowVertical" style="height:164px;">
         <div class="terminal-window">
           <header>
             <div class="btn green"></div>
@@ -42,8 +49,9 @@
         </section>
         </div>
       </div>
+    </div>
 <div class="container" id="indexcontent">
-  	<div class="row" style="background-color:#ffffff; padding-left:36px;padding-top:24px;">
+  	<div class="row" style="background-color:#ffffff; padding-left:36px;padding-top:24px;padding-right:36px;">
 			<div id="indexcol1">
         {{ range first 1 (where .Data.Pages  "Params.include" "index-1") }}
           {{ .Content }}

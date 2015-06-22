@@ -13,9 +13,35 @@ p {
 }
 
 .logogrid {
-   padding-right:32px;display:inline-flex;
+   padding-right:32px;
+   display:inline-flex;
 }
 
+.Center-Container {
+  display:flex;
+  position: relative;
+}
+
+.rowVertical {
+  display:flex;
+  overflow: auto;
+  margin: auto;
+  align-content:center;
+}
+
+
+.cellLeft {
+  float:left;
+}
+
+a.headTitle {
+  color:#8e9cff;
+  font-family: Roboto; 
+  font-size: 18px; 
+  padding-left:16px; 
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+}
 
 
 .parallax-container {
@@ -53,7 +79,7 @@ h4 {font-size:18px; line-height:1.4rem;}
 
 .terminal-window {
   text-align: left;
-  max-width: 950px;
+  max-width: 550px;
   border-radius: 10px;
   position: relative;
   margin-bottom: 2rem;
