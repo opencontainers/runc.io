@@ -1,4 +1,4 @@
-baseurl = "https://www.runc.io"
+baseurl = "https://runc.io"
 languageCode = "en-us"
 title = "Open Container Project"
 author = "Patrick Chanezon"
