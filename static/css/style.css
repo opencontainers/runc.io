@@ -19,14 +19,22 @@ p {
 
 .Center-Container {
   display:flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   position: relative;
 }
 
 .rowVertical {
-  display:flex;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   overflow: auto;
   margin: auto;
   align-content:center;
+}
+
+.thirdrow {
+ background-color:#eef1ff;
 }
 
 
@@ -97,6 +105,8 @@ h4 {font-size:18px; line-height:1.4rem;}
   height: 12px;
   margin: 10px 4px 0 0;
   display: inline-flex;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   border-radius: 8px;
 }
 
