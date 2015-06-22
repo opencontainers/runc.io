@@ -14,7 +14,7 @@
 
      <div class="Center-Container">
       <div class="rowVertical" style="height:164px;">
-        
+
         <div class="rowVertical cellLeft"><img src="{{.Site.BaseURL}}/images/run_icon-01.svg" height="64"></div>
         <div class="rowVertical cellLeft" style="color:#ffffff; font-family: Roboto; font-size: 48px; letter-spacing: .2rem;">runC</div>
       </div>
@@ -51,17 +51,12 @@
       </div>
     </div>
 <div class="Center-Container">
-      <div class="rowVertical" style="width:1000px; background:#ffffff">
+      <div class="rowv" style="width:1000px; background:#ffffff">
         <div class="textColumn cellLeft">
         {{ range first 1 (where .Data.Pages  "Params.include" "index-1") }}
           {{ .Content }}
         {{ end }}
   		</div>
-        <div class="textColumn cellLeft">
-      {{ range first 1 (where .Data.Pages  "Params.include" "index-2") }}
-        {{ .Content }}
-      {{ end }}
-		</div>
       </div>
     </div>
 </div>

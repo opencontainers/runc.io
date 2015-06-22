@@ -24,7 +24,21 @@ p {
   position: relative;
 }
 
+.textColumn > ul li {
+  list-style: disc;
+  margin-left: 1em;
+}
+
 .rowVertical {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  overflow: auto;
+  margin: auto;
+  align-content:center;
+}
+
+.rowv {
   display: flex;
   display: -webkit-flex;
   display: -ms-flexbox;
