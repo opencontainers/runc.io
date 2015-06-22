@@ -33,6 +33,20 @@ p {
   align-content:center;
 }
 
+.textColumn {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction:column;
+  overflow: auto;
+  padding-top:24px;
+  padding-right:36px;
+  padding-left:36px;
+  padding-bottom:36px;
+}
+
 .thirdrow {
  background-color:#eef1ff;
 }
