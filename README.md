@@ -2,7 +2,7 @@
 
 This is the staging area for the website that will be pushed on monday for the runc utility. The website content is created in markdown and uses the [Hugo](http://gohugo.io/overview/introduction/) website generator with a modified version of the material design theme.
 
-This repository is setup to autodeploy to https://runc.azurewebsites.net/: a git push refreshes the website with the new content.
+This repository is setup to autodeploy to https://runc.io which is mapped to https://runc.azurewebsites.net/: a git push refreshes the website with the new content.
 
 Content for the website is in markdown format in the content directory.
 
