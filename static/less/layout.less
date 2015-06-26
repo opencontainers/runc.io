@@ -1,0 +1,123 @@
+.container {
+  max-width: 1271px;
+  margin: 0 auto;
+}
+
+.navbar {
+  padding: 1rem 2rem;
+  //border-bottom: 1px solid #48C7FF;
+  .name {
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+  }
+}
+
+.hero {
+  background-color: #004775;
+  background-image: linear-gradient(-135deg, #0078C5 0%, #004775 100%);
+  //background-image: radial-gradient(52% 107%, #0078C5 26%, #0076C2 26%, #0666A4 59%, #004775 100%);
+  .hamster {
+    padding: 1rem 2rem 2rem 2rem;
+    img {
+      width: 100%;
+      max-width: 500px;
+    }
+    text-align: center;
+  }
+  p {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 300;
+    padding: 1rem 2rem 0 2rem;
+    line-height: 2rem;
+  }
+}
+
+.content {
+  background-color: white;
+  display: flex;
+  flex-flow: row wrap;
+  .wrapper-details {
+    padding: 2rem 2.5rem;
+  }
+  .details {
+    .points {
+      display: flex;
+      flex-direction: column;
+      .point {
+        padding-top: 1rem;
+        border-bottom: 1px solid #E7F4F9;
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+  .terminal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .details, .terminal { 
+    width: 100%; 
+  }
+  .wrapper-terminal {
+    padding: 0 2rem 2rem 2rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .details {
+    width: 50%;
+  }
+  .terminal { 
+    width: 50%;
+  }
+  .wrapper-terminal {
+    padding: 0 2rem 0 0;
+  }
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: #0077A8;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  color: #0077A8;
+}
+
+a {
+  color: @brand-primary;
+  text-decoration: none;
+  &:hover {
+    color: lighten(@brand-primary, 5%);
+  }
+}
+
+body {
+  font-family: @font-regular;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  color: #254451;
+  background-color: #E7F4F9;
+}
