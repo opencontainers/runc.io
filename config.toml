@@ -2,7 +2,7 @@ baseurl = "https://runc.io"
 languageCode = "en-us"
 title = "Open Container Project"
 author = "Patrick Chanezon"
-copyright = "Copyright (c) 2015, Linux Foundation;"
+copyright = "Copyright (c) 2015, Linux Foundation"
 canonifyurls = true
 paginate = 3
 

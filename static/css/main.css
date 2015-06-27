@@ -221,6 +221,31 @@ table {
   padding: 2rem;
   color: white;
 }
+.footer h3 {
+  text-align: center;
+  color: white;
+  margin-bottom: 0;
+}
+.footer h3 img {
+  height: 30px;
+  width: auto;
+  margin-right: 0.7rem;
+  position: relative;
+  top: 0.4rem;
+}
+.footer .footer-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.footer .footer-links .link {
+  margin-right: 0.7rem;
+}
+.footer .copyright {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
 @media screen and (max-width: 960px) {
   .details,
   .terminal {
