@@ -1,47 +1,58 @@
 {{ partial "page-head.html" . }}
 
-<div class="container">
-  <div class="hero">
-    <div class="navbar">
-      <div class="name">runc</div>
-    </div>
-    <p>Announcing a lightweight universal runtime container.</p>
-    <div class="hamster">
-      <img src="{{.Site.BaseURL}}/images/hamster.png">
-    </div>
+<div class="hero">
+  <div class="navbar">
+    <div class="name">runc<span class="org">By Open Container Project</span></div>
   </div>
-  <div class="content">
-    <div class="details">
-      <div class="wrapper-details">
-        <h2>About runc</h2>
-        <p>
-          runc is a CLI tool for spawning and running containers according to the 
-          OCP specification. The code can be found on <a href="https://github.com/opencontainers/runc">Github</a>.
-        </p>
-        <div class="points">
-          <div class="point">
-            <h3>Embeddable</h3>
-            <p>Containers are started as a child process of runC and there is no daemon that needs managing.</p>
-          </div>
-          <div class="point">
-            <h3>Battle Hardened</h3>
-            <p>runC is built on libcontainer, the same container technology powering millions of Docker Engine installations.</p>
-          </div>
-          <div class="point">
-            <h3>Compatible with Docker</h3>
-            <p>Docker images can be ran with runC.</p>
-          </div>
+  <p>Announcing a lightweight universal runtime container.</p>
+  <div class="hamster">
+    <img src="{{.Site.BaseURL}}/images/hamster.png">
+  </div>
+</div>
+<div class="content">
+  <div class="details">
+    <div class="wrapper-details">
+      <h2>About runc</h2>
+      <p>
+        runc is a CLI tool for spawning and running containers according to the 
+        OCP specification. The code can be found on <a href="https://github.com/opencontainers/runc">Github</a>.
+      </p>
+      <div class="points">
+        <div class="point">
+          <h3>Embeddable</h3>
+          <p>Containers are started as a child process of runC and can be embedded into various other systems without having to run a Docker daemon.</p>
+        </div>
+        <div class="point">
+          <h3>Battle Hardened</h3>
+          <p>runC is built on libcontainer, the same container technology powering millions of Docker Engine installations.</p>
+        </div>
+        <div class="point">
+          <h3>Compatible with Docker</h3>
+          <p>Docker images can be ran with runC.</p>
         </div>
       </div>
     </div>
-    <div class="terminal">
-      <div class="wrapper-terminal">
-        <img src="{{.Site.BaseURL}}/images/runc-terminal.png">
-      </div>
+  </div>
+  <div class="terminal">
+    <div class="wrapper-terminal">
+      <img src="{{.Site.BaseURL}}/images/runc-terminal.png">
     </div>
   </div>
 </div>
-
+<div class="content blue">
+  <div class="wrapper-details">
+    {{ range first 1 (where .Data.Pages  "Params.include" "get-started") }}
+      {{ .Content }}
+    {{ end }}
+  </div>
+</div>
+<div class="content">
+  <div class="wrapper-details">
+    {{ range first 1 (where .Data.Pages  "Params.include" "extra") }}
+      {{ .Content }}
+    {{ end }}
+  </div>
+</div>
 
 
  <!--<div class="Center-Container" style="min-height:80px; background-color:#ffffff">

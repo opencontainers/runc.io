@@ -10,6 +10,11 @@
     font-size: 2rem;
     font-weight: 500;
     color: white;
+    .org {
+      font-size: 0.8rem;
+      margin-left: 0.5rem;
+      color: rgba(255,255,255,0.8);
+    }
   }
 }
 
@@ -39,6 +44,16 @@
   background-color: white;
   display: flex;
   flex-flow: row wrap;
+  &.blue {
+    background-color: #364449;
+    color: white;
+    h2 {
+      color: white;
+    }
+    p {
+      color: rgba(255,255,255,0.8);
+    }
+  }
   .wrapper-details {
     padding: 2rem 2.5rem;
   }
@@ -65,7 +80,13 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+.footer {
+  background-color: #254451;
+  padding: 2rem;
+  color: white;
+}
+
+@media screen and (max-width: 960px) {
   .details, .terminal { 
     width: 100%; 
   }
@@ -74,12 +95,12 @@
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 960px) {
   .details {
-    width: 50%;
+    width: 60%;
   }
   .terminal { 
-    width: 50%;
+    width: 40%;
   }
   .wrapper-terminal {
     padding: 0 2rem 0 0;
@@ -94,14 +115,14 @@ p {
 
 h2 {
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 1rem;
   color: #0077A8;
 }
 
 h3 {
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 0.5rem;
   color: #0077A8;
 }
