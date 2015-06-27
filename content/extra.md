@@ -4,9 +4,9 @@ title = "Extra"
 include = "extra"
 +++
 
-## Systemd integration
+## Systemd Integration
 
-runc does not create a dameon, so it integrates well with systemd.
+runC does not create a dameon, so it integrates well with systemd.
 
 ```
 [Unit]
