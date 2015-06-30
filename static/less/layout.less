@@ -23,7 +23,8 @@
   }
   .actions {
     display: flex;
-    margin-top: 0.5rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
     .link {
       margin-left: 2rem;
       text-transform: uppercase;
@@ -53,6 +54,19 @@
         a {
           color: @brand-primary;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    .name {
+      .org {
+        display: block;
+        margin-left: 0;
+        margin-top: 0.5rem;
+        line-height: 1rem;
       }
     }
   }

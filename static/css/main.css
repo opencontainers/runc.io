@@ -150,7 +150,8 @@ table {
 }
 .navbar .actions {
   display: flex;
-  margin-top: 0.5rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
 }
 .navbar .actions .link {
   margin-left: 2rem;
@@ -178,6 +179,14 @@ table {
 }
 .navbar.white .actions .link a {
   color: #00da9c;
+}
+@media screen and (max-width: 600px) {
+  .navbar .name .org {
+    display: block;
+    margin-left: 0;
+    margin-top: 0.5rem;
+    line-height: 1rem;
+  }
 }
 .hero {
   background-color: #004775;
