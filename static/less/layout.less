@@ -6,14 +6,54 @@
 .navbar {
   padding: 1rem 2rem;
   //border-bottom: 1px solid #48C7FF;
+  display: flex;
+  justify-content: space-between;
   .name {
     font-size: 2rem;
     font-weight: 500;
     color: white;
+    a {
+      color: white;
+    }
     .org {
       font-size: 0.8rem;
       margin-left: 0.5rem;
       color: rgba(255,255,255,0.8);
+    }
+  }
+  .actions {
+    display: flex;
+    margin-top: 0.5rem;
+    .link {
+      margin-left: 2rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 0.8rem;
+      a {
+        color: rgba(255,255,255,0.6);
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+  &.white {
+    background-color: white;
+    .name {
+      a {
+        color: #254451;
+      }
+      color: #254451;
+      .org {
+        color: #254451;
+      }
+    }
+    .actions {
+      .link {
+        a {
+          color: @brand-primary;
+        }
+      }
     }
   }
 }
@@ -23,7 +63,7 @@
   background-image: linear-gradient(-135deg, #0078C5 0%, #004775 100%);
   //background-image: radial-gradient(52% 107%, #0078C5 26%, #0076C2 26%, #0666A4 59%, #004775 100%);
   .hamster {
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 1rem 2rem 3rem 2rem;
     img {
       width: 100%;
       max-width: 500px;
@@ -31,10 +71,10 @@
     text-align: center;
   }
   h3 {
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     text-align: center;
     color: white;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     img {
       height: 30px;
       width: auto;

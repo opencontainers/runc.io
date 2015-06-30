@@ -1,0 +1,23 @@
+{{ partial "page-head.html" . }}
+
+<div class="navbar white">
+  <div class="name"><a href="/">runC<span class="org">By Open Container Project</span></a></div>
+  <div class="actions">
+    <div class="link">
+      <a href="{{.Site.BaseURL}}/about">About</a>
+    </div>
+    <div class="link">
+      <a href="{{.Site.BaseURL}}/faq">FAQ</a>
+    </div>
+    <div class="link">
+      <a href="{{.Site.BaseURL}}/charter">Charter</a>
+    </div>
+  </div>
+</div>
+<div class="content">
+  <div class="wrapper-details">
+    {{ .Content }}
+  </div>
+</div>
+
+{{ partial "footer.html" . }}

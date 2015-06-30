@@ -132,10 +132,15 @@ table {
 }
 .navbar {
   padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
 }
 .navbar .name {
   font-size: 2rem;
   font-weight: 500;
+  color: white;
+}
+.navbar .name a {
   color: white;
 }
 .navbar .name .org {
@@ -143,12 +148,43 @@ table {
   margin-left: 0.5rem;
   color: rgba(255, 255, 255, 0.8);
 }
+.navbar .actions {
+  display: flex;
+  margin-top: 0.5rem;
+}
+.navbar .actions .link {
+  margin-left: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.navbar .actions .link a {
+  color: rgba(255, 255, 255, 0.6);
+}
+.navbar .actions .link a:hover {
+  color: white;
+}
+.navbar.white {
+  background-color: white;
+}
+.navbar.white .name {
+  color: #254451;
+}
+.navbar.white .name a {
+  color: #254451;
+}
+.navbar.white .name .org {
+  color: #254451;
+}
+.navbar.white .actions .link a {
+  color: #00da9c;
+}
 .hero {
   background-color: #004775;
   background-image: linear-gradient(-135deg, #0078c5 0%, #004775 100%);
 }
 .hero .hamster {
-  padding: 1rem 2rem 2rem 2rem;
+  padding: 1rem 2rem 3rem 2rem;
   text-align: center;
 }
 .hero .hamster img {
@@ -156,10 +192,10 @@ table {
   max-width: 500px;
 }
 .hero h3 {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   text-align: center;
   color: white;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 .hero h3 img {
   height: 30px;
