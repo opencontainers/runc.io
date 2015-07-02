@@ -5,9 +5,8 @@
 
 .navbar {
   padding: 1rem 2rem;
-  //border-bottom: 1px solid #48C7FF;
-  display: flex;
-  justify-content: space-between;
+  .flex-display();
+  .justify-content(space-between);
   .name {
     font-size: 2rem;
     font-weight: 500;
@@ -22,7 +21,7 @@
     }
   }
   .actions {
-    display: flex;
+    .flex-display();
     padding-top: 1rem;
     padding-right: 1rem;
     .link {
@@ -42,11 +41,11 @@
     background-color: white;
     .name {
       a {
-        color: #254451;
+        color: @gray-darkest;
       }
-      color: #254451;
+      color: @gray-darkest;
       .org {
-        color: #254451;
+        color: @gray-darkest;
       }
     }
     .actions {
@@ -73,9 +72,8 @@
 }
 
 .hero {
-  background-color: #004775;
-  background-image: linear-gradient(-135deg, #0078C5 0%, #004775 100%);
-  //background-image: radial-gradient(52% 107%, #0078C5 26%, #0076C2 26%, #0666A4 59%, #004775 100%);
+  background-color: @color-gradient-start;
+  background-image: linear-gradient(-135deg, @color-gradient-start 0%, @color-gradient-end 100%);
   .hamster {
     padding: 1rem 2rem 3rem 2rem;
     img {
@@ -112,10 +110,10 @@
 
 .content {
   background-color: white;
-  display: flex;
-  flex-flow: row wrap;
+  .flex-display();
+  .flex-flow(row wrap);
   &.blue {
-    background-color: #364449;
+    background-color: @gray-dark;
     color: white;
     h2 {
       color: white;
@@ -129,11 +127,11 @@
   }
   .details {
     .points {
-      display: flex;
-      flex-direction: column;
+      .flex-display();
+      .flex-direction(column);
       .point {
         padding-top: 1rem;
-        border-bottom: 1px solid #E7F4F9;
+        border-bottom: 1px solid @color-background;
         &:last-child {
           border-bottom: 0;
         }
@@ -141,9 +139,9 @@
     }
   }
   .terminal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .flex-display();
+    .align-items(center);
+    .justify-content(center);
     img {
       width: 100%;
     }
@@ -151,7 +149,7 @@
 }
 
 .footer {
-  background-color: #254451;
+  background-color: @gray-darkest;
   padding: 2rem;
   color: white;
   h3 {
@@ -167,8 +165,8 @@
     }
   }
   .footer-links {
-    display: flex;
-    justify-content: center;
+    .flex-display();
+    .justify-content(center);
     margin-top: 1.5rem;
     .link {
       margin-right: 0.7rem;
@@ -212,14 +210,14 @@ h2 {
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 1rem;
-  color: #0077A8;
+  color: @blue-dark;
 }
 
 h3 {
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
-  color: #0077A8;
+  color: @blue-dark;
 }
 
 a {
@@ -234,6 +232,6 @@ body {
   font-family: @font-regular;
   -webkit-font-smoothing: antialiased;
   font-size: 14px;
-  color: #254451;
-  background-color: #E7F4F9;
+  color: @gray-darkest;
+  background-color: @color-background;
 }
