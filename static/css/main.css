@@ -132,7 +132,14 @@ table {
 }
 .navbar {
   padding: 1rem 2rem;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
   display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
   justify-content: space-between;
 }
 .navbar .name {
@@ -149,6 +156,10 @@ table {
   color: rgba(255, 255, 255, 0.8);
 }
 .navbar .actions {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
   display: flex;
   padding-top: 1rem;
   padding-right: 1rem;
@@ -189,7 +200,7 @@ table {
   }
 }
 .hero {
-  background-color: #004775;
+  background-color: #0078c5;
   background-image: linear-gradient(-135deg, #0078c5 0%, #004775 100%);
 }
 .hero .hamster {
@@ -226,7 +237,14 @@ table {
 }
 .content {
   background-color: white;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
   display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
 }
 .content.blue {
@@ -243,19 +261,36 @@ table {
   padding: 2rem 2.5rem;
 }
 .content .details .points {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
   display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .content .details .points .point {
   padding-top: 1rem;
-  border-bottom: 1px solid #E7F4F9;
+  border-bottom: 1px solid #e7f4f9;
 }
 .content .details .points .point:last-child {
   border-bottom: 0;
 }
 .content .terminal {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
   display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
   align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
 }
 .content .terminal img {
@@ -279,7 +314,14 @@ table {
   top: 0.4rem;
 }
 .footer .footer-links {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
   display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
   margin-top: 1.5rem;
 }
@@ -320,13 +362,13 @@ h2 {
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 1rem;
-  color: #0077A8;
+  color: #0077a8;
 }
 h3 {
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
-  color: #0077A8;
+  color: #0077a8;
 }
 a {
   color: #00da9c;
@@ -340,5 +382,5 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 14px;
   color: #254451;
-  background-color: #E7F4F9;
+  background-color: #e7f4f9;
 }
