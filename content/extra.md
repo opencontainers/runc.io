@@ -6,7 +6,7 @@ include = "extra"
 
 ## Systemd Integration
 
-runC does not create a dameon, so it integrates well with systemd.
+runC does not create a daemon, so it integrates well with systemd.
 
 ```
 [Unit]
