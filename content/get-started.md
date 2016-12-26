@@ -20,6 +20,7 @@ Examples of such tools include [oci-image-tools][oci-image-tools], [skopeo][skop
 
 ```
 $ skopeo copy docker://busybox:latest oci:busybox:latest
+$ oci-create-runtime-bundle busybox /tmp/myapp
 $ umoci unpack --image busybox:latest /tmp/myapp
 ```
 
@@ -55,3 +56,9 @@ $ runc create container-name
 $ # Do some further set up.
 $ runc start container-name
 ```
+
+[oci-image]: https://github.com/opencontainers/image-spec
+[oci-runtime]: https://github.com/opencontainers/runtime-spec
+[oci-image-tools]: https://github.com/opencontainers/image-tools
+[skopeo]: https://github.com/projectatomic/skopeo
+[umoci]: https://github.com/cyphar/umoci
