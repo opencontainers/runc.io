@@ -1,5 +1,5 @@
 +++
-date = "2015-06-07T19:03:22-07:00"
+date = "2016-12-26T16:20:00+11:00"
 title = "Extra"
 include = "extra"
 +++
@@ -17,7 +17,7 @@ After=network.target
 [Service]
 CPUQuota=200%
 MemoryLimit=1536M
-ExecStart=/usr/local/bin/runc
+ExecStart=/usr/local/bin/runc run minecraft
 Restart=on-failure
 WorkingDirectory=/containers/minecraftbuild
 
