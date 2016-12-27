@@ -1,37 +1,64 @@
 +++
-date = "2015-06-07T19:03:22-07:00"
+date = "2016-12-26T14:45:30+11:00"
 title = "Get Started"
 include = "get-started"
 +++
 
 ## Getting started
 
-You can run Docker images pulled with Docker: first you need to run a container for that image, then export it's file system. 
+runC only requires a root filesystem and a configuration in order to start containers.
+
+Creation and extraction of root filesystems is beyond the scope of runC, however you could use Docker to generate a filesystem for a runC container.
 
 ```
-$ docker export myapp > myapp.tar
-$ tar xvf myapp.tar -C /tmp/myappfs
-$ cd /tmp/myappfs
+$ mkdir /tmp/myapp/rootfs
+$ docker export myapp | tar xvfC - /tmp/myapp/rootfs
 ```
 
-Or you can start with just a directory with a filesystem in it:
+The OCI also defines an [image specification][oci-image], and there are a variety of tools that are available that also allow you to create a root filesystem using OCI images.
+Examples of such tools include [oci-image-tools][oci-image-tools], [skopeo][skopeo], and [umoci][umoci].
 
 ```
-$ ls myapp
+$ skopeo copy docker://busybox:latest oci:busybox:latest
+$ oci-create-runtime-bundle busybox /tmp/myapp
+$ umoci unpack --image busybox:latest /tmp/myapp
+```
+
+Or you can start with just a directory that has a root filesystem already in it:
+
+```
+$ ls /tmp/myapp/rootfs
 bin      etc      lib      linuxrc  mnt      proc     run      sys      usr
 dev      home     lib64    media    opt      root     sbin     tmp      var
 ```
 
-In that directory, create a manifest file for runC to run it, or let runC generate one for you.
+In the parent directory, create an [OCI runtime configuration file][oci-runtime], or let runC generate one for you.
 
 ```
-$ runc spec > container.json
+$ cd /tmp/myapp
+$ runc spec
+$ ls
+config.json  rootfs
 ```
 
-Edit container.json to specify the command you want to run inyour container, and any other options. 
-
-Run the container!
+Edit the `config.json` to your liking, to specify the commands you would like to run, or any other options.
+You can now run a container with runC.
 
 ```
-$ runc
+$ runc run container-name
+sh-4.4#
 ```
+
+runC also supports the concept of creating and starting a container as separate operations.
+
+```
+$ runc create container-name
+$ # Do some further set up.
+$ runc start container-name
+```
+
+[oci-image]: https://github.com/opencontainers/image-spec
+[oci-runtime]: https://github.com/opencontainers/runtime-spec
+[oci-image-tools]: https://github.com/opencontainers/image-tools
+[skopeo]: https://github.com/projectatomic/skopeo
+[umoci]: https://github.com/cyphar/umoci
