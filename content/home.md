@@ -7,7 +7,7 @@ include = "home"
 ## About runC
 
 runC is a CLI tool for spawning and running containers according to the OCI specification.
-The code can be found on <a href="https://github.com/opencontainers/runc">Github</a>.
+The code can be found on [Github][source].
 
 ### Embeddable
 Containers are started as a child process of runC and can be embedded into various other systems without having to run a daemon.
@@ -17,3 +17,5 @@ runC is built on libcontainer, the same container technology powering millions o
 
 ### Unopinionated
 runC does not force you to have a particular workflow or deployment setup, it only requires a root filesystem and configuration.
+
+[source]: https://github.com/opencontainers/runc
