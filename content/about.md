@@ -11,7 +11,8 @@ runC is currently the standard container runtime used by the Docker engine, and 
 
 The OCI is an open governance structure for the express purpose of creating open industry standards around container formats and runtime.
 Projects associated to the Open Container Initiative can be found at [https://github.com/opencontainers](https://github.com/opencontainers).
-Contact the project maintainers on IRC at [#opencontainers](https://botbot.me/freenode/opencontainers/).
-Contact the Linux Foundation about the OCI at [info@opencontainers.org](mailto:info@opencontainers.org).
+There are more details about connecting with the OCI community [here][oci-community] and [here][oci-contact].
 
 [oci]: https://opencontainers.org/
+[oci-community]: https://www.opencontainers.org/community
+[oci-contact]: https://www.opencontainers.org/contact
