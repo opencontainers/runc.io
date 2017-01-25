@@ -1,0 +1,13 @@
+<div class="{% if page.hero %}hero{% endif %}">
+  {% include nav.html %}
+  {% if page.hero %}
+    <h3>
+      <img src="{{ "/static/images/logo-open-container.png" | relative_url }}" />
+      Open Container Initiative
+    </h3>
+    <p>Announcing <strong>runC</strong> - a lightweight universal runtime container.</p>
+    <div class="hamster">
+      <img src="{{ "/static/images/hamster.png" | relative_url }}" />
+    </div>
+  {% endif %}
+</div>

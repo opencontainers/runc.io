@@ -1,9 +1,3 @@
-+++
-date = "2016-12-26T16:20:00+11:00"
-title = "Extra"
-include = "extra"
-+++
-
 ## Systemd Integration
 
 runC does not create a daemon, so it integrates well with systemd.

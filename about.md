@@ -1,7 +1,6 @@
-+++
-date = "2016-12-26T16:20:00+11:00"
-title = "About"
-+++
+---
+title: about runC
+---
 
 ## About
 
