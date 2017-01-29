@@ -1,20 +1,23 @@
 # Web
 
-This is the staging area for the website that will be pushed on monday for the runc utility. The website content is created in markdown and uses the [Hugo](http://gohugo.io/overview/introduction/) website generator with a modified version of the material design theme.
+The website content is created in Markdown and uses the [Jekyll][] website generator.
 
-This repository is setup to autodeploy to https://runc.io which is mapped to https://runc.azurewebsites.net/: a git push refreshes the website with the new content.
+In order to preview the website locally, [install Jekyll][jekyll-install], then in the directory where you checked out this project:
 
-Content for the website is in markdown format in the content directory.
-
-In order to preview the website locally, [install Hugo](http://gohugo.io/overview/installing/), then in the directory where you checked out this project:
 ```
-hugo server  -w -v
-Web Server is available at http://127.0.0.1:1313/
-Press Ctrl+C to stop
+$ jekyll serve
+…
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
 ```
 
 In order to generate the static html for the site
+
 ```
-hugo
+$ jekyll build
 ```
-The html is generated in the public directory.
+
+The html is generated in the `_site` directory.
+
+[Jekyll]: https://jekyllrb.com/
+[jekyll-install]: https://jekyllrb.com/docs/installation/

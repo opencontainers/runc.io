@@ -1,0 +1,25 @@
+---
+layout: base
+---
+<div class="details">
+  <div class="wrapper-details">
+    {{ content }}
+  </div>
+</div>
+<div class="terminal">
+  <div class="wrapper-terminal">
+    <img src="{{ "/static/images/runc-terminal.png" | relative_url }}">
+  </div>
+</div>
+
+<div class="content blue">
+  <div class="wrapper-details">
+    {% capture get_started_mdwn %}{% include get-started.md %}{% endcapture %}
+    {{ get_started_mdwn | markdownify }}
+  </div>
+</div>
+
+<div class="wrapper-details">
+  {% capture systemd_mdwn %}{% include systemd.md %}{% endcapture %}
+  {{ systemd_mdwn | markdownify }}
+</div>

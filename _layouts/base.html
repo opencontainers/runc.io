@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{site.language}}">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <link rel="icon" type="image/png" href="{{ "/static/images/favicon-16x16.png" | relative_url }}" sizes="16x16">
+    <link href="{{ "/static/css/flexboxgrid.css" | relative_url }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{{ "/static/css/main.css" | relative_url }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{{ "/static/css/tomorrow-night.css" | relative_url }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  </head>
+  <body>
+    <div class="container">
+      {% include header.html %}
+      <div class="content">
+        {{ content }}
+      </div>
+      {% include footer.html %}
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    {% if site.googleAnalyticsUserID %}
+      {% include google-analytics.html %}
+    {% endif %}
+  </body>
+</html>

@@ -1,8 +1,8 @@
-+++
-date = "2016-12-26T15:00:00+11:00"
-title = "About runC"
-include = "home"
-+++
+---
+layout: home
+title: runC
+hero: true
+---
 
 ## About runC
 

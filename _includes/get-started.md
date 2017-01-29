@@ -1,9 +1,3 @@
-+++
-date = "2016-12-26T14:45:30+11:00"
-title = "Get Started"
-include = "get-started"
-+++
-
 ## Getting started
 
 runC only requires a root filesystem and a configuration in order to start containers.
